@@ -1,0 +1,33 @@
+{
+  "project": "AgroFly",
+  "supplied": "2026-10-12",
+  "files": [
+    {
+      "original_filename": "AgroFlyFinale.pdf",
+      "file": "jas-urpaq-finalist.pdf",
+      "preview": "jas-urpaq-finalist.png",
+      "label": "Jas Urpaq Founders Project Competition — finalist",
+      "sha256": "e4bf7aad2110f96c4d2e28b376a7e44ae1784fc565765e299332bbcfc7620847",
+      "bytes": 650203,
+      "preview_sha256": "6136721f06e330247a01fd02207c07e78b097f84be6ccd1a896ebfc412f81431"
+    },
+    {
+      "original_filename": "photo_2026-07-22_18-37-24.jpg",
+      "file": "launchzone-participation.jpg",
+      "preview": "launchzone-participation.jpg",
+      "label": "LaunchZone International StartUp Battle 2026 — participation",
+      "sha256": "23e7b1b8a176cb6acf857fc4afb63f5d4f2205f397a5d58dd8c2f462fd5ae0aa",
+      "bytes": 117658,
+      "preview_sha256": "23e7b1b8a176cb6acf857fc4afb63f5d4f2205f397a5d58dd8c2f462fd5ae0aa"
+    },
+    {
+      "original_filename": "photo_2026-08-31_14-53-45 (2).jpg",
+      "file": "step-by-step-appreciation.jpg",
+      "preview": "step-by-step-appreciation.jpg",
+      "label": "Step By Step — appreciation for active participation; no placement stated",
+      "sha256": "3adb17dcaa4cd055e65600d8b989beb0f30cc24d29f3c5f05e19c2a34bf8fb00",
+      "bytes": 133849,
+      "preview_sha256": "3adb17dcaa4cd055e65600d8b989beb0f30cc24d29f3c5f05e19c2a34bf8fb00"
+    }
+  ]
+}

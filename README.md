@@ -67,6 +67,29 @@ The drone sensor and training dataset are not interchangeable. A deployment woul
 
 The central lesson was practical: the quality of a field-analysis system depends on the relationship between sensor, dataset and evaluation split. A high number without that context says very little about what will happen over a new field.
 
+## Competition certificates
+
+**Finalist at the Jas Urpaq Founders Project Competition**, documented by a certificate issued to AgroFly on **29 August 2026**, with Turan University and Galanz Bottlers. The two personal certificates below document participation and appreciation associated with AgroFly.
+
+[Original documents and certificate gallery](docs/awards/README.md).
+
+<details>
+<summary>View the certificates</summary>
+
+**Jas Urpaq Founders Project Competition — finalist**
+
+<a href="docs/awards/jas-urpaq-finalist.pdf"><img src="docs/awards/jas-urpaq-finalist.png" alt="Jas Urpaq Founders Project Competition — finalist" width="760"></a>
+
+**LaunchZone International StartUp Battle 2026 — participation**
+
+<a href="docs/awards/launchzone-participation.jpg"><img src="docs/awards/launchzone-participation.jpg" alt="LaunchZone International StartUp Battle 2026 — participation" width="760"></a>
+
+**Step By Step — appreciation for active participation; no placement stated**
+
+<a href="docs/awards/step-by-step-appreciation.jpg"><img src="docs/awards/step-by-step-appreciation.jpg" alt="Step By Step — appreciation for active participation; no placement stated" width="760"></a>
+
+</details>
+
 ---
 
 ### Built by
