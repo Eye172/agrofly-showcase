@@ -7,6 +7,8 @@ A precision-agriculture investigation spanning a scout-drone build, crop classif
 
 *The physical scout-drone build documented during the project.*
 
+**Status: development on hold.** The scout-drone build and software experiments are documented below; no real-world agricultural pilot was completed. A future restart remains possible, subject to field access, representative data and funding.
+
 ## The question behind the prototype
 
 Can aerial observations become a map that helps someone inspect what is growing in different parts of a field? AgroFly explored that question through a bounded first experiment: distinguishing **wheat and soybeans** from multispectral image tiles. Weed detection, disease diagnosis and autonomous spraying were not established by this classifier.
@@ -61,11 +63,42 @@ flowchart LR
 
 **Technology:** Python, multispectral image processing, PyTorch / ResNet-18, field-map inference and drone hardware. The product website is separate from the experimental model.
 
-## What remains open
+## Project status and engineering retrospective
 
-The drone sensor and training dataset are not interchangeable. A deployment would need matching calibration, field collection and evaluation across locations and seasons. Spraying is a product direction, not a capability demonstrated by the crop classifier. The project is currently paused; the material here documents the build and experiments completed so far.
+**Development is on hold; a future restart remains possible.** AgroFly produced a scout-drone build, a crop-classification pipeline, field-map experiments and a product website. These are prototype outcomes, not a validated agricultural service. No real-world field pilot was completed, and the proposed spraying drone was neither built nor purchased.
 
-The central lesson was practical: the quality of a field-analysis system depends on the relationship between sensor, dataset and evaluation split. A high number without that context says very little about what will happen over a new field.
+### Why the field pilot did not happen
+
+Required drone components arrived after the intended growing-season window had passed. The team therefore missed the opportunity to collect representative imagery and evaluate the system in the field that season. Nurali subsequently moved to Malaysia for his studies and took the scout drone with him, leaving the team without local access to that platform for a Kazakhstan-based pilot.
+
+### 1. Coverage was constrained by flight endurance and imaging requirements
+
+The scout configuration had an approximately **30-minute flight-endurance constraint**. With the selected camera, obtaining the desired image detail required relatively low-altitude flight, reducing coverage per pass. Over large agricultural fields, that combination implied lengthy survey operations, repeated battery changes and a substantial battery inventory. The team did not establish a practical, costed field-survey workflow through a pilot.
+
+A tethered-power approach was considered but rejected because of the cost of cable over the required distances, transport and handling requirements, and concerns about mechanical strength. It did not resolve the coverage problem within the project's available resources.
+
+### 2. Strong dataset results did not establish field generalization
+
+Model development depended heavily on one multispectral dataset. Although that dataset comes from East Kazakhstan, its availability did not provide sufficient diversity of farms, seasons, crop conditions and sensors for the intended deployment. The experiments exposed a substantial risk of overfitting and dataset-specific bias; high within-dataset accuracy was not evidence of reliable performance on new fields.
+
+Building a representative dataset would require repeated field collection, reliable labels and agronomic expertise. Illumination, weather, crop growth stage and sensor differences can change the model's inputs in ways that matter for evaluation and retraining. The gap between the dataset's calibrated multispectral camera and the scout drone's RGB/NoIR cameras also remained unresolved.
+
+### 3. Funding depended on evidence the prototype could not yet provide
+
+The team did not secure funding without a completed field pilot. As a result, the proposed second drone for targeted spraying remained a concept: assembling or purchasing a suitable platform required capital beyond the project's available budget. The complete scout-to-treatment workflow was never demonstrated.
+
+### What would need to change before a restart
+
+The central lesson is that flight operations, sensor selection, model validation and financing must be planned together. Improving the classifier alone would not resolve the field-coverage or deployment constraints.
+
+A credible restart would begin with a **small, clearly scoped scouting pilot**, before committing to a spraying platform:
+
+- Secure local access to a drone, a partner field and agronomic support before the relevant growing-season window.
+- Measure achievable image detail and area coverage at different altitudes, including battery changes and operating costs.
+- Align the sensor with the learning task; collect and label representative data, then evaluate on independently held-out fields and capture dates.
+- Use the pilot's operational results and model limitations to assess feasibility and support a funding decision for any subsequent treatment stage.
+
+These are conditions for reconsidering development, not an announced relaunch or a committed delivery schedule. The completed work is preserved as a basis for that decision.
 
 ## Competition certificates
 
